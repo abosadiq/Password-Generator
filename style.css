@@ -1,0 +1,114 @@
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.password-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: cornflowerblue;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  width: 600px;
+}
+.input {
+  height: 3rem;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+}
+#number {
+  width: 30px;
+}
+.number-characters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.number-characters label {
+  margin-right: 1rem;
+}
+.checkbox {
+  height: 30px;
+  width: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #34495e;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #0d659b;
+  cursor: pointer;
+}
+.checkbox > span {
+  color: #34495e;
+  padding: 0.7rem 0.35rem;
+  position: relative;
+}
+
+.checkbox:checked + span::before {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 95.5%;
+  top: 0.4rem;
+}
+
+.checkbox:checked {
+  border: 1px solid #0d659b;
+  background-color: #34495e;
+}
+.checkbox:active {
+  border: 2px solid #34495e;
+}
+.include {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#checkbox-2,
+#checkbox-3 {
+  margin-left: 1rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.4s;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn:hover,
+#copy:hover {
+  background-color: #ffffff33;
+}
+.btn:focus,
+#copy:focus {
+  outline: none;
+}
+#copy {
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.4s;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
